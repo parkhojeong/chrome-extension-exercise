@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "iEatBackground",
+  "description": "Add a custom background to Google.com",
+  "version": "1.0",
+  "icons": {
+    "16": "/images/cat_1290.jpg",
+    "48": "/images/cat_1290.jpg",
+    "128": "/images/cat_1290.jpg"
+  },
+  "page_action": {
+    "default_icon" : {
+      "16": "/images/cat_1290.jpg",
+      "48": "/images/cat_1290.jpg",
+      "128": "/images/cat_1290.jpg"
+    }
+  },
+  "content_scripts": [{
+    "matches": ["https://www.google.com/*"],
+    "css": ["main.css"]
+  }]
+}
